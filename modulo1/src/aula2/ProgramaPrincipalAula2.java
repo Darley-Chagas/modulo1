@@ -15,6 +15,13 @@ public class ProgramaPrincipalAula2 {
 		c1.ativado=true;
 		
 		c2 = new Cliente();
+		c2.nome="Rafael";
+		c2.cpf="221.112.343-56";
+		c2.rg="2123453";
+		c2.peso=78.5;
+		c2.altura=1.80;
+		c2.ativado=false;
+		
 		c3 = new Cliente();
 
 	}
