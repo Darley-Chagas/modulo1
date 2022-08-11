@@ -29,7 +29,24 @@ public class ProgramaPrincipalAula2 {
 		c3.peso = 70.0;
 		c3.altura = 1.71;
 		c3.ativado = true;
+		
+		//Adicionando calculadora
+		
+		Calculadora calc = new Calculadora();
+		int soma = calc.somar(10, 20);
+		System.out.println("Soma : " + soma);
+		
+		int sub = calc.subtrair(50, 10);
+		System.out.println("Subtração : " + sub);
+		
+		int div = calc.dividir(50, 2);
+		System.out.println("Divisão : " + div);
+		
+		int mult = calc.multiplicar(6, 7);
+		System.out.println("Multiplicação : " + mult);
+
 
 	}
-
+	
+	
 }
