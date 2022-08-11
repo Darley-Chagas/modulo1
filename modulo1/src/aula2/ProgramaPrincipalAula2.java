@@ -39,7 +39,7 @@ public class ProgramaPrincipalAula2 {
 		int sub = calc.subtrair(50, 10);
 		System.out.println("Subtração : " + sub);
 		
-		int div = calc.dividir(50, 2);
+		float div = calc.dividir(50, 2);
 		System.out.println("Divisão : " + div);
 		
 		int mult = calc.multiplicar(6, 7);
