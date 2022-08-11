@@ -23,6 +23,12 @@ public class ProgramaPrincipalAula2 {
 		c2.ativado=false;
 		
 		c3 = new Cliente();
+		c3.nome = "Darley";
+		c3.cpf = "999.888.777-22";
+		c3.rg = "2221123";
+		c3.peso = 70.0;
+		c3.altura = 1.71;
+		c3.ativado = true;
 
 	}
 
