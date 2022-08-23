@@ -1,5 +1,7 @@
 package aula2;
 
+import java.util.Scanner;
+
 public class Calculadora {
 	
 	double somar (double n1, double n2) {
@@ -54,5 +56,24 @@ public class Calculadora {
 			return false;
 		}
 	}
+	
+	public double media (int qtd) {
+		Scanner leitor = new Scanner(System.in);
+		double n, soma=0, media;
+		
+		//processamento			
+		for (int i = 0; i<qtd; i=i+1) {//substituindo i<3 por i<qtd
+			//Entrada
+			System.out.println("Digite N: ");
+			n = leitor.nextDouble();
+			soma = soma + n; //Soma atual com o n digitado
+		}
+		
+		media = soma /qtd;//substituindo 3 por qtd
+		return media;
+		
+	}
+
+	
 
 }
