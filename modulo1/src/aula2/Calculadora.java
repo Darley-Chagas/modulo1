@@ -70,6 +70,7 @@ public class Calculadora {
 		}
 		
 		media = soma /qtd;//substituindo 3 por qtd
+		leitor.close();
 		return media;
 		
 	}
