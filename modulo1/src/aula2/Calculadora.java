@@ -104,8 +104,45 @@ public class Calculadora {
 		System.out.println("O maior é: " + maior + " e o menor é: "+ menor);
 		leitor.close();
 	}
+	
+	
+	
+	public void maiorMenorMedia(int qtd) {
+		Scanner leitor= new Scanner(System.in);
+		int n ;
+		int maior = 0;
+		int menor = 0;
+		int soma = 0;
+		double media;
 		
+		//Loop de qtd vezes
+		for (int i=0; i<qtd; i=i+1) {
+		
+			System.out.println("Digite N"+(i+1)+":");
+			n = leitor.nextInt();
+			soma = soma + n;
+			
+			if(i==0) {
+				maior = n;
+				menor = n;
+			}
+			
+			if(n>maior) {
+				maior = n;
+			}
+			
+			if(n<menor) {
+				menor = n;
+			}
+		}
+		
+		media = soma/qtd;
+		
+		System.out.println("O maior é: " + maior + " e o menor é: "+ menor + " média: " + media);
+		leitor.close();
 	}
+		
+}
 
 	
 

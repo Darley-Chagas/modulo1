@@ -15,8 +15,9 @@ public class ProgramaPrincipalMaior10_2 {
 		int qtd = leitor.nextInt();
 		
 		Calculadora calc = new Calculadora();
-		calc.maiorMenor(qtd);
+		//calc.maiorMenor(qtd);
 		
+		calc.maiorMenorMedia(qtd);
 		
 
 }
