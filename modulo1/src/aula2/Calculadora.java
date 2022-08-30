@@ -25,6 +25,14 @@ public class Calculadora {
 		return n1 * n2;
 	}
 	
+	/**
+	 * Calcula as operações aritméticas básicas de soma, subtração,divisão e multiplicação 
+	 * @param n1 primeiro numero da operacao
+	 * @param n2 segundo numero da operacao
+	 * @param operacao 1-Somar 2-Subtrair 3-Dividir 4-Multiplicar
+	 * @return resultado do operação
+	 */
+	
 	public Double calcular(Double n1, Double n2, Integer operacao) {
 		Double calculo = null;
 		
@@ -140,6 +148,33 @@ public class Calculadora {
 		
 		System.out.println("O maior é: " + maior + " e o menor é: "+ menor + " média: " + media);
 		leitor.close();
+	}
+
+	public void multOperacoes() {
+Scanner leitor = new Scanner(System.in);
+		
+		int sair;
+		do {
+			
+			System.out.println("N1");
+			Double n1 = leitor.nextDouble();
+			
+			System.out.println("N2");
+			Double n2 = leitor.nextDouble();
+			
+			System.out.println("1-Somar 2-Subtrair 3-Dividir 4-Multiplicar");		
+			Integer operacao = leitor.nextInt();
+			
+			double res = calcular(n1, n2, operacao);
+			System.out.println("Resultado: " + res);
+			
+			System.out.println("Deseja fazer nova operação? 0-Sair, 1-Continuar");
+			sair = leitor.nextInt();
+			
+		} while (sair!=0); 
+		System.out.println("Programa Encerrado ");
+		leitor.close();
+		
 	}
 		
 }
