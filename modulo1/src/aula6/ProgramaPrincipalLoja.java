@@ -14,24 +14,27 @@ public class ProgramaPrincipalLoja {
 		
 		lojinhaDaMaria.setQuantidadeClientes(qtd);
 		
+		for(int i = 0; i<qtd; i++) {
+		Cliente cli =  new Cliente();
+			System.out.println("Nome: ");
+			cli.nome = leitor.next();
+			
+			System.out.println("Sexo: ");
+			cli.sexo = leitor.next().charAt(0);
+			
+			System.out.println("Idade: ");
+			cli.idade = leitor.nextInt();
 		
-		Cliente jao =  new Cliente();
-		jao.nome = "Jão";
-		jao.sexo = 'M';
-		jao.idade = 50;
-		
-		Cliente maria = new Cliente();
-		maria.nome = "Maria";
-		maria.sexo = 'F';
-		maria.idade = 30;
-		
-		
-		lojinhaDaMaria.adicionarCliente(jao);
-		lojinhaDaMaria.adicionarCliente(maria);
+			lojinhaDaMaria.adicionarCliente(cli);
+		}
 		
 		lojinhaDaMaria.imprimirTodos();
 		
-
+		leitor.close();
+		
 	}
-
+		
 }
+		
+
+
