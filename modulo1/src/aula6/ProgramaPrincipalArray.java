@@ -12,6 +12,7 @@ public class ProgramaPrincipalArray {
 		int qtd = leitor.nextInt();
 		
 		int n[] = new int [qtd];//[qtd] = n.length
+		
 		//Carga no Vetor
 		for(int i=0; i<n.length; i++) {
 			System.out.println("Digite N " + (i+1) + ":");
