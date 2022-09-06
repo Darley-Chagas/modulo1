@@ -14,6 +14,7 @@ public class ProgramaPrincipalLoja {
 		
 		lojinhaDaMaria.setQuantidadeClientes(qtd);
 		
+		//Cadastro
 		for(int i = 0; i<qtd; i++) {
 		Cliente cli =  new Cliente();
 			System.out.println("Nome: ");
@@ -27,12 +28,22 @@ public class ProgramaPrincipalLoja {
 		
 			lojinhaDaMaria.adicionarCliente(cli);
 		}
-		
-		lojinhaDaMaria.imprimirTodos();
-		
+		System.out.println("1-Imprimir todos 2-Imprimir mulheres 3-Imprimir homens");
+		int opcao=leitor.nextInt();
+		if(opcao == 1){
+			lojinhaDaMaria.imprimirTodos();
+			
+		}else if(opcao == 2) {
+			lojinhaDaMaria.imprimirClientesMulheres();
+			
+		}else lojinhaDaMaria.imprimirClientesHomens();
+			
 		leitor.close();
 		
 	}
+		
+			
+		
 		
 }
 		
